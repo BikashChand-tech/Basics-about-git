@@ -1,0 +1,45 @@
+Raw informations about git and repository by my point of view:-
+
+well git is a distributed version control. we can track any changes or updates done in a file which is uploaded in github by git.
+Different users can work on same file(collabration) from differnt device and we can track that file.
+And github is a repository where we can store or uplaod our projects(file). the main advantage of github repository is we can restore our project on desktop if by any chance it delete from our local files(desktop). 
+
+first we have to transfer our file into stagging area and then from stagging area to github repository.
+ie localfiles---> stagging area---> github repository.
+ 
+ steps to upload file on repository:-
+ 1) first uplaod to the stagging area.
+ -->goto the file and click right button and select gitbashhere then open git bash
+ -->write command:  
+                   git init // to initialize the git
+
+                   git status//to track the file .first it is untracked or it is used to find out information regarding what files are modified and what fileas are there in the satgging area.
+
+                   git add filename.txt// to add file from local to stagging area
+
+                   git commit -m"message"// used to add commit(message) about files.
+
+                   git log //is used to shows the author name ,date and time
+
+                   git log --oneline// is used to show the name  of authors,date and time and the upadted files hashvalue by using hashvalue we can track the 
+                   file.
+--> if first time you upload the file then you have to configure your file(account) by command:
+git config --global user.email " your email"// used to config email
+git config --global user.name " your name(write name which is in your github)"// used to config name
+  after configuration , check whether it is configured or not by command.
+  command to check configuration : git config --list
+
+2) now our file reached to the staging area and after that we have to push our file into repository:
+
+--> to push(uplaod) our file in repository following commands are used:
+  open github repository and copy the url ( of type remote & origin://  ) and paste it into the git bash .
+
+-->if first time ,then it will show signing box and you have to type  sign the github account(username and email)
+
+--> after that write command git push origin master// to push the file from stagging area to repository.
+ 
+ now our file reached to repository.
+
+ suppose if our file is deleted then write this command to restore(clone) in local files:
+  git clone paste url// copy url form code of repository.
+
