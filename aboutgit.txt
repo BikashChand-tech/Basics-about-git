@@ -1,4 +1,4 @@
-Raw informations about git and repository by my point of view:-
+Raw informations about git and repository :-
 
 well git is a distributed version control. we can track any changes or updates done in a file which is uploaded in github by git.
 Different users can work on same file(collabration) from differnt device and we can track that file.
